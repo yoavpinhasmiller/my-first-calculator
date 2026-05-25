@@ -1,1 +1,0 @@
-<?hph include_once("imdex.html"); ?>
