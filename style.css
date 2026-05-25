@@ -1,0 +1,83 @@
+body{
+  background:#222;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:Arial;
+}
+
+.calc{
+  background:#111;
+  padding:20px;
+  width:360px;
+  border-radius:12px;
+}
+
+.top{
+  color:#9f9;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+#display{
+  width:100%;
+  height:55px;
+  font-size:22px;
+  margin-bottom:10px;
+  border:none;
+  border-radius:6px;
+  padding:10px;
+  background:#dfe8d8;
+  direction:ltr;
+  text-align:left;
+}
+
+.keys{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+}
+
+button{
+  height:50px;
+  font-size:18px;
+  border:none;
+  border-radius:6px;
+  background:#444;
+  color:white;
+  cursor:pointer;
+}
+
+button:active{
+  transform:scale(0.95);
+}
+
+button.func{
+  background:#888;
+  color:black;
+}
+
+/* כפתור חילוק */
+button[data-v="/"]{
+  background:#444;
+  color:white;
+}
+
+/* אפס רחב */
+.zero{
+  grid-column:span 5;
+}
+
+/* שווה (=) רחב יותר */
+button[data-a="eq"]{
+  grid-column:span 2;   /* רחב */
+  grid-row: span 2;      /* גבוה כפול */
+  font-size:22px;
+}
+
+/* נקודה (.) רחבה */
+button[data-v="."]{
+  grid-column:span 5;   /* רחב */
+  font-size:22px;
+}

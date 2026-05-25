@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>מחשבון מדעי</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc">
+  <div class="top">CASIO</div>
+
+  <input id="display" readonly>
+
+  <div class="keys">
+    <!-- שורה 1 -->
+    <button class="func" data-a="clear">AC</button>
+    <button class="func" data-a="del">DEL</button>
+    <button class="func" data-a="frac">a/b</button>
+    <button data-v="(">(</button>
+    <button data-v=")">)</button>
+
+    <!-- שורה 2 -->
+    <button data-f="sqrt">√</button>
+    <button data-f="cbrt">∛</button>
+    <button data-f="root">ⁿ√</button>
+    <button data-a="pow">xʸ</button>
+    <button data-v="÷">÷</button>
+
+    <!-- שורה 3 -->
+    <button data-v="7">7</button>
+    <button data-v="8">8</button>
+    <button data-v="9">9</button>
+    <button data-v="!">!</button>
+    <button data-v="*">×</button>
+
+    <!-- שורה 4 -->
+    <button data-v="4">4</button>
+    <button data-v="5">5</button>
+    <button data-v="6">6</button>
+    <button data-v="-">−</button>
+    <button data-v="+">+</button>
+
+    <!-- שורה 5 -->
+    <button data-v="1">1</button>
+    <button data-v="2">2</button>
+    <button data-v="3">3</button>
+    <button data-a="eq" style="grid-row: span 2;">=</button>
+
+    <!-- שורה 6 -->
+    <button data-v="0" class="zero">0</button>
+    <button data-v=".">.</button>
+  </div>
+</div>
+
+<script src="site.js"></script>
+</body>
+</html>
